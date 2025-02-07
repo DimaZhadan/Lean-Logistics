@@ -476,9 +476,9 @@ video {
   position: relative;
   top: -130px;
   background-color: #fff;
-  border-radius: 50px !important;
-  z-index: 20 !important;
-  padding-top: 120px;
+  border-radius: 50px;
+  z-index: 20;
+  padding: 120px 16px 120px 16px;
 }
 
 .benefits .container .benefits-vrapper .benefits-title {
@@ -499,23 +499,36 @@ video {
 
 .benefits .container .benefits-vrapper .benefits-items .benefits-item {
   padding-left: 24px;
+  position: relative;
 }
 
-.benefits .container .benefits-vrapper .benefits-items .benefits-item::after {
+.benefits .container .benefits-vrapper .benefits-items .benefits-item::before {
   display: block;
-  top: 0;
-  left: 0;
+  position: absolute;
   content: '';
   width: 1px;
   height: 100%;
   background-color: #000;
+  top: 0;
+  left: 0;
+}
+
+.benefits .container .benefits-vrapper .benefits-items .benefits-item .benefits-logo {
+  width: 72px;
+  height: 72px;
 }
 
 .benefits .container .benefits-vrapper .benefits-items .benefits-item .benefits-heder {
   font-size: 24px;
   font-weight: 600;
   margin-top: 24px;
+  color: #000;
+}
 
+.benefits .container .benefits-vrapper .benefits-items .benefits-item .benefits-descr {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 16px;
 }
 
 @media (max-width: 1920px) {
@@ -615,6 +628,10 @@ video {
     margin: 48px auto 0;
   }
 
+  .benefits .container .benefits-vrapper .benefits-items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
 }
 
@@ -833,6 +850,11 @@ video {
   .services .container .services-vrapper .services-advantages .services-advantages__card {
     margin-top: 16px;
   }
+
+  .benefits {
+    padding: 40px 16px 40px 16px;
+  }
+
 }
 
 @media (max-width:701px) {
@@ -886,6 +908,15 @@ video {
 
   .services .container .services-vrapper .services-advantages:nth-child(3) {
     margin-top: 64px;
+  }
+
+  .benefits .container .benefits-vrapper .benefits-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 58px;
+    row-gap: 80px;
+    margin-top: 100px;
   }
 
 }
