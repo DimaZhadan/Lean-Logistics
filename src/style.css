@@ -474,11 +474,11 @@ video {
 
 .benefits {
   position: relative;
-  top: -130px;
+  top: -135px;
   background-color: #fff;
   border-radius: 50px;
   z-index: 20;
-  padding: 120px 16px 120px 16px;
+  padding: 120px 16px 0 16px;
 }
 
 .benefits .container .benefits-vrapper .benefits-title {
@@ -529,6 +529,64 @@ video {
   font-size: 18px;
   font-weight: 400;
   margin-top: 16px;
+}
+
+/* contacts */
+.contacts {
+  position: relative;
+
+  background-color: #e4e4e4;
+  border-radius: 50px;
+}
+
+.contacts .contacts-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts .contacts-items .contacts-item:nth-child(1) {
+  max-width: 650px;
+}
+
+.contacts .contacts-items .contacts-item:nth-child(2) {
+  max-width: 584px;
+}
+
+.contacts .contacts-items .contacts-item .contacts-item__header .contacts-item__title {
+  font-size: 56px;
+  font-weight: 600;
+  color: #000;
+}
+
+.contacts .contacts-items .contacts-item .contacts-item__header .contacts-item__titlelogo {
+  width: 72px;
+  height: 72px;
+  margin-top: 24px;
+  animation: contactLogoBg 6s infinite steps(1, end);
+  background-size: cover;
+}
+
+@keyframes contactLogoBg {
+  0% {
+    background-image: url('./icons/contacrs_logo/call.svg');
+  }
+
+  25% {
+    background-image: url('./icons/contacrs_logo/mail.svg');
+  }
+
+  50% {
+    background-image: url('./icons/contacrs_logo/chat.svg');
+  }
+
+  75% {
+    background-image: url('./icons/contacrs_logo/voice mail.svg');
+  }
+
+  100% {
+    background-image: url('./icons/contacrs_logo/voice mail.svg');
+  }
 }
 
 @media (max-width: 1920px) {
@@ -910,13 +968,26 @@ video {
     margin-top: 64px;
   }
 
+  .services .container .services-vrapper .services-advantages:nth-child(4) {
+    margin-bottom: 45px;
+  }
+
+  .services .container .services-vrapper .services-advantages .services-advantages__card {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+
   .benefits .container .benefits-vrapper .benefits-items {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 58px;
     row-gap: 80px;
-    margin-top: 100px;
+    margin-top: 32px;
+  }
+
+  .benefits .container .benefits-vrapper .benefits-title {
+    font-size: 36px;
   }
 
 }

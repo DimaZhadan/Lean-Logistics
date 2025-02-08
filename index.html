@@ -28,7 +28,7 @@
               <li class="header-menu__element"><a href="#about">Про нас</a></li>
               <li class="header-menu__element"><a href="#services">Послуги</a></li>
               <li class="header-menu__element"><a href="#benefits">Переваги</a></li>
-              <li class="header-menu__element"><a href="#">Контакти</a></li>
+              <li class="header-menu__element"><a href="#contacts">Контакти</a></li>
             </ul>
           </div>
           <div class="header-contacts">
@@ -57,7 +57,7 @@
                 <li class="header-burger__element"><a href="#about">Про нас</a></li>
                 <li class="header-burger__element"><a href="#services">Послуги</a></li>
                 <li class="header-burger__element"><a href="#benefits">Переваги</a></li>
-                <li class="header-burger__element"><a href="#">Контакти</a></li>
+                <li class="header-burger__element"><a href="#contacts">Контакти</a></li>
               </ul>
             </div>
             <div class="header-burger__socials">
@@ -348,8 +348,43 @@
       </div>
     </div>
   </section>
-
-  <script type="module" src="/src/main.js"></script>
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts-items">
+        <div class="contacts-item">
+          <div class="contacts-item__header">
+            <h2 class="contacts-item__title">Ваш логістичний партнер завжди на зв'язку!</h2>
+            <div class="contacts-item__titlelogo">
+            </div>
+          </div>
+          <p class="contacts-item__descr">Вас зацікавили наші послуги або хочете отримати консультацію? Залиште свій
+            номер телефону, і наш спеціаліст зв'яжеться з вами. Ми готові відповісти на всі ваші запитання та допомогти
+            з організацією перевезень.</p>
+        </div>
+        <form action="" method="get" class="contacts-item">
+          <div class="contacts-item__name">
+            <label for="name">Ім'я</label>
+            <input type="text" name="name" id="name" required placeholder="John Smith" minlength="3">
+          </div>
+          <div class="contacts-item__email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="example@gmail.com" minlength="12">
+          </div>
+          <div class="contacts-item__phone">
+            <label for="tel">Номер телефону</label>
+            <input type="number" name="tel" id="tel" required placeholder="+38 000 000 0000" minlength="14"
+              maxlength="20">
+          </div>
+          <div class="contacts-item__text">
+            <label for="text">Ваше повідомлення</label>
+            <input type="text" name="text" id="text" required>
+          </div>
+          <input type="submit" value="Надіслати" class="contacts-item__btn">
+        </form>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="./src/main.js"></script>
 
 
 
