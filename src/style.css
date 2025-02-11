@@ -649,6 +649,11 @@ video {
   margin-top: 40px;
 }
 
+.contacts .contacts-items .contacts-item .contacts-item__btn:hover {
+  background-color: #18181a;
+  color: #fff;
+}
+
 @media (max-width: 1920px) {
   .header {
     min-width: 100%;
@@ -751,12 +756,28 @@ video {
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .contacts {
+    padding: 40px 16px;
+  }
+
   .contacts .contacts-items {
     flex-direction: column;
   }
 
+  .contacts .contacts-items .contacts-item:nth-child(1) {
+    width: 100%;
+  }
+
+  .contacts .contacts-items .contacts-item:nth-child(2) {
+    width: 100%;
+  }
+
   .contacts .contacts-items .contacts-item:nth-child(2) {
     margin-top: 50px;
+  }
+
+  .contacts .contacts-items .contacts-item .contacts-item__header {
+    margin-bottom: 40px;
   }
 
   .contacts .contacts-items .contacts-item .contacts-item__name,
@@ -767,11 +788,11 @@ video {
   }
 
   .contacts .contacts-items .contacts-item .contacts-item__name input,
-.contacts .contacts-items .contacts-item .contacts-item__email input,
-.contacts .contacts-items .contacts-item .contacts-item__phone input,
-.contacts .contacts-items .contacts-item .contacts-item__text input {
-  width: 100%;
-}
+  .contacts .contacts-items .contacts-item .contacts-item__email input,
+  .contacts .contacts-items .contacts-item .contacts-item__phone input,
+  .contacts .contacts-items .contacts-item .contacts-item__text input {
+    width: 100%;
+  }
 
 }
 
@@ -993,6 +1014,10 @@ video {
 
   .benefits {
     padding: 40px 16px 40px 16px;
+  }
+
+  .contacts .contacts-items .contacts-item .contacts-item__header .contacts-item__title {
+    font-size: 36px;
   }
 
 }
