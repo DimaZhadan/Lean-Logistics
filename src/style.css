@@ -16,6 +16,18 @@ h6 {
   padding: 0;
 }
 
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/e-Ukraine-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/e-Ukraine-Light.otf');
+  font-weight: light;
+}
+
 body {
   font-family: "Inter", serif;
 }
@@ -33,7 +45,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px 0 60px;
+  padding: 0 60px;
   height: 102px;
 
 }
@@ -750,6 +762,10 @@ video {
 }
 
 @media (max-width: 1544px) {
+  .header-elements {
+    padding: 0 16px;
+  }
+
   .services {
     padding: 50px 16px 120px 16px;
   }
@@ -791,11 +807,6 @@ video {
 }
 
 @media (max-width: 1180px) {
-  .header-elements {
-    padding: 0 30px 0 30px;
-  }
-
-
   .about-items {
     flex-direction: column;
     justify-content: start;
@@ -911,7 +922,6 @@ video {
 
   .header-elements {
     height: 80px;
-    padding: 0 16px 0 16px;
   }
 
   .header-logo {
