@@ -19,18 +19,34 @@ h6 {
 @font-face {
   font-family: 'e-Ukraine';
   src: url('./fonts/e-Ukraine-Bold.otf');
-  font-weight: bold;
+  font-weight: 700;
 }
 
 @font-face {
   font-family: 'e-Ukraine';
   src: url('./fonts/e-Ukraine-Light.otf');
-  font-weight: light;
+  font-weight: 300;
 }
 
-body {
-  font-family: "Inter", serif;
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/e-Ukraine-Medium.otf');
+  font-weight: 500;
 }
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/e-Ukraine-Regular.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/e-Ukraine-Thin.otf');
+  font-weight: 100;
+}
+
+body {}
 
 .header {
   position: fixed;
@@ -136,7 +152,7 @@ body {
 }
 
 .langbtn:hover {
-  color: #202326 !important;
+  color: #202326;
   background-color: #ffcc00;
   text-decoration: none !important;
 }
@@ -145,10 +161,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 261px;
-  height: 54px;
+  padding: 21px 24px;
   border-radius: 104px;
   background-color: #ffcc00;
+  white-space: nowrap;
 }
 
 .consultbtn:hover {
@@ -231,8 +247,8 @@ video {
 }
 
 .main .main-container .maine-title {
-  font-family: "Inter";
-  font-weight: medium;
+  font-family: 'e-Ukraine';
+  font-weight: 500;
   font-size: 64px;
   margin-top: 174px;
   text-align: center;
@@ -240,8 +256,8 @@ video {
 }
 
 .main .main-container .maine-text {
-  font-family: "Inter";
-  font-weight: light;
+  font-family: 'e-Ukraine';
+  font-weight: 100;
   font-size: 22px;
   margin-top: 24px;
   text-align: center;
@@ -317,6 +333,8 @@ video {
   top: 0;
 }
 
+/* about */
+
 .about {
   background-color: #e4e4e4;
   border-radius: 50px;
@@ -346,8 +364,8 @@ video {
 }
 
 .about-item__title {
-  font-family: "Inter";
-  font-weight: medium;
+  font-family: 'e-Ukraine';
+  font-weight: 500;
   font-size: 56px;
   margin-top: 120px;
 }
@@ -389,9 +407,10 @@ video {
 }
 
 .about-item__stats .about-stats__txt {
-  font-family: "Inter";
-  font-weight: light;
+  font-family: 'e-Ukraine';
+  font-weight: 300;
   font-size: 20px;
+  color: #333;
 }
 
 .about-stats__cargo,
@@ -400,15 +419,16 @@ video {
 }
 
 .about-item__stats .about-stats__num {
-  font-family: "Inter";
+  font-family: 'e-Ukraine';
   font-weight: 600;
   font-size: 40px;
 }
 
 .about-item .about-item__descr {
-  font-family: "Inter";
-  font-weight: light;
+  font-family: 'e-Ukraine';
+  font-weight: 300;
   font-size: 22px;
+  color: #333;
 }
 
 /* services */
@@ -421,7 +441,7 @@ video {
 }
 
 .services .container .services-vrapper .services-header {
-  font-family: "Inter";
+  font-family: 'e-Ukraine';
   font-weight: 600;
   font-size: 56px;
   color: #fff;
@@ -438,6 +458,7 @@ video {
 }
 
 .services .container .services-vrapper .services-items .services-item__descr .services-item__header {
+  font-family: 'e-Ukraine';
   font-weight: 500;
   font-size: 32px;
   color: #fff;
@@ -445,6 +466,7 @@ video {
 }
 
 .services .container .services-vrapper .services-items .services-item__descr .services-item__txt {
+  font-family: 'e-Ukraine';
   font-weight: 300;
   font-size: 18px;
   color: #d1d1d1;
@@ -471,10 +493,11 @@ video {
 }
 
 .services .container .services-vrapper .services-advantages .services-advantages__card {
+  font-family: 'e-Ukraine';
   border: 1px solid #fff;
   border-radius: 50px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 300;
   color: #fff;
   padding: 20px 24px;
 }
@@ -495,6 +518,7 @@ video {
 }
 
 .benefits .container .benefits-vrapper .benefits-title {
+  font-family: 'e-Ukraine';
   color: #000;
   font-size: 56px;
   font-weight: 600;
@@ -532,6 +556,7 @@ video {
 }
 
 .benefits .container .benefits-vrapper .benefits-items .benefits-item .benefits-heder {
+  font-family: 'e-Ukraine';
   font-size: 24px;
   font-weight: 600;
   margin-top: 24px;
@@ -539,9 +564,11 @@ video {
 }
 
 .benefits .container .benefits-vrapper .benefits-items .benefits-item .benefits-descr {
+  font-family: 'e-Ukraine';
   font-size: 18px;
   font-weight: 400;
   margin-top: 16px;
+  color: #333;
 }
 
 /* contacts */
