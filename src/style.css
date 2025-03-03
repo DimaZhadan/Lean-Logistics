@@ -260,6 +260,7 @@ video {
   font-weight: 100;
   font-size: 22px;
   margin-top: 24px;
+  line-height: 160%;
   text-align: center;
   width: 781px;
   color: #ffffff;
@@ -340,7 +341,7 @@ video {
   border-radius: 50px;
   position: relative;
   top: -40px;
-  padding: 0 16px;
+  padding: 120px 16px 0;
   z-index: 10;
 }
 
@@ -352,7 +353,7 @@ video {
 .about-items {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .about-item:nth-child(1) {
@@ -363,11 +364,11 @@ video {
   width: 584px;
 }
 
-.about-item__title {
+.about-item__titletext {
   font-family: 'e-Ukraine';
   font-weight: 500;
   font-size: 56px;
-  margin-top: 120px;
+  line-height: 120%;
 }
 
 .about-item__titlelogo {
@@ -410,6 +411,7 @@ video {
   font-family: 'e-Ukraine';
   font-weight: 300;
   font-size: 20px;
+  line-height: 160%;
   color: #333;
 }
 
@@ -422,12 +424,14 @@ video {
   font-family: 'e-Ukraine';
   font-weight: 600;
   font-size: 40px;
+  margin-top: 20px;
 }
 
 .about-item .about-item__descr {
   font-family: 'e-Ukraine';
   font-weight: 300;
   font-size: 22px;
+  line-height: 160%;
   color: #333;
 }
 
@@ -470,7 +474,7 @@ video {
   font-weight: 300;
   font-size: 18px;
   color: #d1d1d1;
-  line-height: 26px;
+  line-height: 160%;
   margin-top: 16px;
 }
 
@@ -568,6 +572,7 @@ video {
   font-size: 18px;
   font-weight: 400;
   margin-top: 16px;
+  line-height: 160%;
   color: #333;
 }
 
@@ -599,8 +604,10 @@ video {
 }
 
 .contacts .contacts-items .contacts-item .contacts-item__header .contacts-item__title {
+  font-family: 'e-Ukraine';
   font-size: 56px;
   font-weight: 600;
+  line-height: 120%;
   color: #000;
 }
 
@@ -635,7 +642,10 @@ video {
 }
 
 .contacts-item__descr {
+  font-family: 'e-Ukraine';
   font-size: 18px;
+  font-weight: 300;
+  line-height: 160%;
 }
 
 .contacts .contacts-items .contacts-item .contacts-item__name,
@@ -658,6 +668,7 @@ video {
 .contacts .contacts-items .contacts-item .contacts-item__email label,
 .contacts .contacts-items .contacts-item .contacts-item__phone label,
 .contacts .contacts-items .contacts-item .contacts-item__text label {
+  font-family: 'e-Ukraine';
   font-size: 16px;
   color: #18181a;
   margin-bottom: 8px;
@@ -684,7 +695,9 @@ video {
   border: 1px solid gray;
   padding: 21px 24px;
   border-radius: 50px;
+  font-family: 'e-Ukraine';
   font-size: 20px;
+  font-weight: 300;
   background-color: #e4e4e4;
   margin-top: 40px;
 }
@@ -703,7 +716,9 @@ video {
 
 .footer .footer-vrapper .footer-header {
   color: #505050;
-  font-size: 148px;
+  font-family: 'e-Ukraine';
+  font-size: 128px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -726,6 +741,7 @@ video {
 .footer .footer-vrapper .footer-items .footer-item .footer-item__header,
 .footer .footer-vrapper .footer-items .footer-item .footer-item__tel,
 .footer .footer-vrapper .footer-items .footer-item .footer-item__email {
+  font-family: "Inter";
   color: #fff;
   font-size: 18px;
   font-weight: 600;
@@ -741,6 +757,7 @@ video {
 
 .footer .footer-vrapper .footer-items .footer-item .footer-item__location,
 .footer .footer-vrapper .footer-items .footer-item .footer-item__worcktime {
+  font-family: "Inter";
   color: #a1a1a1;
   font-size: 18px;
 }
@@ -776,6 +793,7 @@ video {
 }
 
 .footer .footer-vrapper .footer-copyrights {
+  font-family: "Inter";
   text-align: center;
   color: #747476;
   font-size: 18px;
@@ -810,7 +828,7 @@ video {
   }
 
   .footer .footer-vrapper .footer-header {
-    font-size: 128px;
+    font-size: 120px;
   }
 }
 
@@ -828,12 +846,17 @@ video {
   }
 
   .footer .footer-vrapper .footer-header {
-    font-size: 108px;
+    font-size: 96px;
   }
 
 }
 
 @media (max-width: 1180px) {
+
+  .about {
+    padding: 20px 16px 0;
+  }
+
   .about-items {
     flex-direction: column;
     justify-content: start;
@@ -930,7 +953,7 @@ video {
   }
 
   .footer .footer-vrapper .footer-header {
-    font-size: 98px;
+    font-size: 88px;
   }
 
 }
@@ -1090,7 +1113,7 @@ video {
   }
 
   .footer .footer-vrapper .footer-header {
-    font-size: 78px;
+    font-size: 72px;
   }
 
 }
@@ -1111,7 +1134,7 @@ video {
     transform: scale(0.9);
   }
 
-  .about-item__title {
+  .about-item__titletext {
     font-size: 36px;
     margin-top: 40px;
   }
@@ -1174,6 +1197,9 @@ video {
     font-size: 36px;
   }
 
+  .footer .footer-vrapper .footer-header {
+    font-size: 48px;
+  }
 }
 
 @media (max-width:701px) {
@@ -1287,6 +1313,10 @@ video {
   .footer .footer-vrapper .footer-copyrights {
     padding-top: 32px;
   }
+
+  .footer .footer-vrapper .footer-header {
+    font-size: 28px;
+  }
 }
 
 @media (max-width:400px) {
@@ -1299,7 +1329,7 @@ video {
   }
 
   .footer .footer-vrapper .footer-header {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .footer .footer-vrapper .footer-items .footer-item .footer-item__socials {
